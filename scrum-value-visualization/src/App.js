@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-// import RadarChart from './Chart';
 
 const ScrumValuesForm = () => {
   const [values, setValues] = useState([
@@ -212,9 +211,9 @@ const ScrumValuesForm = () => {
     
   ]);
 
-  useEffect(() => {
-    document.title = `Scrum Values - ${getTotalPoints()} points`;
-  });
+  // useEffect(() => {
+  //   document.title = `Scrum Values - ${getTotalPoints()} points`;
+  // });
 
   const handleSelectChange = (value, index, parentIndex) => {
     const newValues = values.slice();
@@ -229,9 +228,9 @@ const ScrumValuesForm = () => {
     setValues(newValues);
   };
 
-  const getTotalPoints = () => {
-    return values.reduce((acc, value) => acc + value.points, 0);
-  };
+  // const getTotalPoints = () => {
+  //   return values.reduce((acc, value) => acc + value.points, 0);
+  // };
 
   return (
     <div className='ScrumValuesForm'>
@@ -260,7 +259,7 @@ const ScrumValuesForm = () => {
           <p>Total Points: {value.points}</p>
         </div>
       ))}
-      <h3>Total Points: {getTotalPoints()}</h3>
+      {/* <h3>Total Points: {getTotalPoints()}</h3> */}
     </div>
   );
 };
