@@ -228,9 +228,7 @@ const ScrumValuesForm = () => {
     setValues(newValues);
   };
 
-  // const getTotalPoints = () => {
-  //   return values.reduce((acc, value) => acc + value.points, 0);
-  // };
+  
 
   return (
     <div className='ScrumValuesForm'>
@@ -245,7 +243,6 @@ const ScrumValuesForm = () => {
                   <select
                     onChange={(e) => handleSelectChange(e.target.value, i, index)}
                   >
-                    {/* <option value="no" selected>No</option> */}
                     {question.options.map((option, j) => (
                       <option key={j} value={option.value}>
                         {option.label}
@@ -259,7 +256,6 @@ const ScrumValuesForm = () => {
           <p>Total Points: {value.points}</p>
         </div>
       ))}
-      {/* <h3>Total Points: {getTotalPoints()}</h3> */}
     </div>
   );
 };
