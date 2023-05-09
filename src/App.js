@@ -201,18 +201,26 @@ const ScrumValuesForm = () => {
 
 
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col' style={{height:'100vh', width:'40vw', overflow:'auto'}}>
-                    <div className='ScrumValuesForm' >
-                        {values.map((value, index) => (
-                            <div key={index}>
-                                <h3>{value.name}</h3>
-                                <ul>
+        <div>
+            
+            <div className='container'>
+            <div className='introduction'>
+                <p className='toolname'>Scrum value visualization</p>
+                <p className='section'>How to use?</p>
+                <p className='tutorial'>Read carefully these statement below. Compare to yourself. If you agreed with it, choose "yes". Otherwise, choose "no"</p>
+            </div>
+                <div className='row' >
+                    <div className='col-6'>
+                        <div className='ScrumValuesForm'>
+                            {values.map((value, index) => (
+                                <div key={index}>
+                                    <h3>{value.name} - point: {value.points}</h3>
                                     {value.questions.map((question, i) => (
-                                        <li key={i}>
-                                            <label>
+                                        <div className='row question' key={i}>
+                                            <div className='col-10'>
                                                 {question.question}
+                                            </div>
+                                            <div className='col-2'>
                                                 <select
                                                     onChange={(e) => handleSelectChange(e.target.value, i, index)}
                                                 >
@@ -222,17 +230,16 @@ const ScrumValuesForm = () => {
                                                         </option>
                                                     ))}
                                                 </select>
-                                            </label>
-                                        </li>
+                                            </div>
+                                        </div>
                                     ))}
-                                </ul>
-                                <p>Total Points: {value.points}</p>
-                            </div>
-                        ))}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className='col'>
-                    <Radar data={data} options={options}/>
+                    <div className='col-6'>
+                        <Radar data={data} options={options} />
+                    </div>
                 </div>
             </div>
         </div>
