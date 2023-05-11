@@ -14,7 +14,7 @@ const Homepage = () => {
                 while adding the right practices to optimize for their specific needs.You may be thinking, that sounds great!
                 But, how do I get started?
             </p>
-            <img src="/public/img/scrum.png" alt="Scrum" id="img1" width="30vw" height="20vh"></img>
+            <img src={require('./img/scrum1.png')} alt="Scrum" id="img1"></img>
             <p>
                 It starts with understanding the Scrum framework which is defined in The Scrum Guide and was first introduced to the world in 1995
                 as a better way of team collaboration for solving complex problems.
@@ -43,7 +43,7 @@ const Homepage = () => {
                 The Scrum Values of Courage, Focus, Commitment, Respect, and Openness, are all important elements that Scrum Team members must consider when working together.
                 The Scrum Values are particularly important in environments where experimentation is core to making progress.
             </p>
-            <img src="/public/img/scrum2.png" alt="Scrum2" id="img2" width="30vw" height="20vh"></img>
+            <img src={require('./img/scrum2.png')} alt="Scrum2" id="img2"></img>
             <br />
             <p>To visualize your Scrum Value, you can use this tool. </p>
             <p>Answer 5 questions for each value by selecting yes or no, depending on your own opinion.</p>

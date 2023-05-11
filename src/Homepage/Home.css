@@ -1,11 +1,12 @@
 * {
-    margin: 2vh 3vw;
+}
+
+.homepage {
+    margin: 2vh 20vw;
+    justify-content: center;
+
 }
 
 p {
     text-align: justify;
-}
-
-.img1 , .img2 {
-    align-items: center;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ScrumValueForm';
+import './ScrumValueForm.css';
 import {
     Chart as ChartJS,
     RadialLinearScale,
@@ -202,12 +202,13 @@ const ScrumValuesForm = () => {
 
     return (
         <div className='container'>
+            <h3 className='tutorial'>Answer 5 questions for each value by selecting yes or no.<br /> The result will be generate automatically besides questions</h3>
             <div className='row' >
                 <div className='col-6'>
                     <div className='ScrumValuesForm'>
                         {values.map((value, index) => (
                             <div key={index}>
-                                <h3>{value.name} - point: {value.points}</h3>
+                                <h3 className='questions'>{value.name} - point: {value.points}</h3>
                                 {value.questions.map((question, i) => (
                                     <div className='row question' key={i}>
                                         <div className='col-10'>
