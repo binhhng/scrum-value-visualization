@@ -1,0 +1,11 @@
+* {
+    margin: 2vh 3vw;
+}
+
+p {
+    text-align: justify;
+}
+
+.img1 , .img2 {
+    align-items: center;
+}

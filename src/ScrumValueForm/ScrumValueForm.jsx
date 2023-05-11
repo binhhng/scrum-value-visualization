@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './ScrumValueForm';
 import {
     Chart as ChartJS,
     RadialLinearScale,
@@ -201,45 +201,37 @@ const ScrumValuesForm = () => {
 
 
     return (
-        <div>
-            
-            <div className='container'>
-            <div className='introduction'>
-                <p className='toolname'>Scrum value visualization</p>
-                <p className='section'>How to use?</p>
-                <p className='tutorial'>Read carefully these statement below. Compare to yourself. If you agreed with it, choose "yes". Otherwise, choose "no"</p>
-            </div>
-                <div className='row' >
-                    <div className='col-6'>
-                        <div className='ScrumValuesForm'>
-                            {values.map((value, index) => (
-                                <div key={index}>
-                                    <h3>{value.name} - point: {value.points}</h3>
-                                    {value.questions.map((question, i) => (
-                                        <div className='row question' key={i}>
-                                            <div className='col-10'>
-                                                {question.question}
-                                            </div>
-                                            <div className='col-2'>
-                                                <select
-                                                    onChange={(e) => handleSelectChange(e.target.value, i, index)}
-                                                >
-                                                    {question.options.map((option, j) => (
-                                                        <option key={j} value={option}>
-                                                            {option}
-                                                        </option>
-                                                    ))}
-                                                </select>
-                                            </div>
+        <div className='container'>
+            <div className='row' >
+                <div className='col-6'>
+                    <div className='ScrumValuesForm'>
+                        {values.map((value, index) => (
+                            <div key={index}>
+                                <h3>{value.name} - point: {value.points}</h3>
+                                {value.questions.map((question, i) => (
+                                    <div className='row question' key={i}>
+                                        <div className='col-10'>
+                                            {question.question}
                                         </div>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
+                                        <div className='col-2'>
+                                            <select
+                                                onChange={(e) => handleSelectChange(e.target.value, i, index)}
+                                            >
+                                                {question.options.map((option, j) => (
+                                                    <option key={j} value={option}>
+                                                        {option}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
                     </div>
-                    <div className='col-6'>
-                        <Radar data={data} options={options} />
-                    </div>
+                </div>
+                <div className='col-6'>
+                    <Radar data={data} options={options} />
                 </div>
             </div>
         </div>
