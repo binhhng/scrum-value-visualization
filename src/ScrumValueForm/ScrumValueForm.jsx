@@ -173,7 +173,7 @@ const ScrumValuesForm = () => {
         scales: {
             r: {
                 angleLines: {
-                    display: false
+                    display: true
                 },
                 beginAtZero: true,
                 suggestedMin: 0,
@@ -187,7 +187,7 @@ const ScrumValuesForm = () => {
 
     const handleSelectChange = (value, index, parentIndex) => {
         const newValues = values.slice();
-        newValues[parentIndex].questions[index].answer = value; // add answer property to questions array
+        newValues[parentIndex].questions[index].answer = value;
         const currentAnswer = newValues[parentIndex].points;
 
         if (value === 'Yes') {
@@ -202,7 +202,7 @@ const ScrumValuesForm = () => {
 
     return (
         <div className='container'>
-            <h3 className='tutorial'>Answer 5 questions for each value by selecting yes or no.<br /> The result will be generate automatically besides questions</h3>
+            <h3 className='tutorial'>Answer 5 questions for each value by selecting yes or no. The result will be generate automatically.</h3>
             <div className='row' >
                 <div className='col-6'>
                     <div className='ScrumValuesForm'>

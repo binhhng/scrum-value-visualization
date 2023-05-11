@@ -1,6 +1,4 @@
 import './Home.css';
-import { Link } from 'react-router-dom';
-
 
 const Homepage = () => {
     return (
@@ -48,7 +46,6 @@ const Homepage = () => {
             <p>To visualize your Scrum Value, you can use this tool. </p>
             <p>Answer 5 questions for each value by selecting yes or no, depending on your own opinion.</p>
             <a href="/visualize" >Scrum Value Visualization</a>
-            {/* <Link to="/visualize"></Link> */}
         </div>
     );
 };

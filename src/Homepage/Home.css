@@ -1,10 +1,7 @@
-* {
-}
-
 .homepage {
-    margin: 2vh 20vw;
+    margin: 2vh auto;
     justify-content: center;
-
+    width: 66vw;
 }
 
 p {
