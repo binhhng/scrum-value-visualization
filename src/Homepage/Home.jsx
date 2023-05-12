@@ -45,7 +45,7 @@ const Homepage = () => {
             <br />
             <p>To visualize your Scrum Value, you can use this tool. </p>
             <p>Answer 5 questions for each value by selecting yes or no, depending on your own opinion.</p>
-            <a href="/visualize" >Scrum Value Visualization</a>
+            <a href="/visualize" >Scrum Value Visualize Tool</a>
         </div>
     );
 };
