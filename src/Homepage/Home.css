@@ -1,7 +1,8 @@
 .homepage {
-    margin: 2vh auto;
+    margin: 4vh auto;
     justify-content: center;
     width: 66vw;
+    height: 100vh;
 }
 
 p {
