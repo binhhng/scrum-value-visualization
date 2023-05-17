@@ -234,7 +234,7 @@ const App = () => {
 
     return (
         <div className="container">
-            <div className="homepage">
+            <div className="heading">
                 <h1 className="intro">Scrum Values</h1>
                 <p>
                     Scrum is an empirical process, where decisions are based on
