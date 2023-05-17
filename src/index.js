@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Homepage from './Homepage/Home.jsx';
-import ScrumValuesForm from './ScrumValueForm/ScrumValueForm.jsx';
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
-    <Homepage />
-    <ScrumValuesForm />
+    <App />
   </React.Fragment>
 );
 

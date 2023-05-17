@@ -1,3 +1,14 @@
+.homepage {
+    margin: 4vh auto;
+    justify-content: center;
+    width: 66vw;
+    height: 100vh;
+}
+
+p {
+    text-align: justify;
+}
+
 .container {
     margin: 0 auto 5vh auto;
 }
