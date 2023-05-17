@@ -1,26 +1,5 @@
-.heading {
-    margin: 4vh auto;
-    justify-content: center;
-    width: 66vw;
-    height: 100vh;
-}
-
 p {
     text-align: justify;
-}
-
-.container {
-    margin: 0 auto 5vh auto;
-}
-
-.row {
-    height: 100%;
-    width: 100%;
-}
-
-.ScrumValuesForm {
-    height: 80vh;
-    overflow: auto;
 }
 
 h3 {
@@ -29,11 +8,18 @@ h3 {
     font-size: 20;
 }
 
-.tutorial {
-    padding: 5px;
+.intro, .tutorial {
     font-weight: bold;
 }
 
-.question {
-    padding: 5px;
+.form {
+    height: 25vh;
+    overflow: auto;
+    width: 100%;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
 }
